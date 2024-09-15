@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(lightblue, white);
+    font-family: "Acme", sans-serif;
+}
+
+.paralax{
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    padding: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.paralax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+
+.paralax::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to top, lightcyan, transparent);
+    z-index: 1000;
+}
+#text1{
+    position: absolute;
+    font-size: 3.8em;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 10px black;
+    bottom: -5;
+    left: 9%;
+    top: 4%;
+} 
+
+.description{
+    position: relative;
+    padding: 10em;
+    background-color: lightcyan;
+    z-index: -100;
+}
+
+.description p {
+    font-size: 3.8em;
+}
+.description2{
+    position: relative;
+    padding: 10em;
+    background-color: lightgray;
+    z-index: -100;
+}
+.description2 p {
+    font-size: 3.8em;
+}
+.paralax img#clod3{
+    top: 30%;
+    left: 5%;
+
+}
+.paralax img#bush{
+    top: 5%;
+    left: -2%;
+    
+}
+.paralax img#sun{
+    top: 10%;
+    left: 0;
+    z-index: -1;
+}
+#text2{
+    position: absolute;
+    font-size: 3em;
+    color: white;
+    padding: 10px 50px;
+    transform: translateY(134px);
+    left: 0;
+    top: 0;
+    text-shadow: 3px 3px 10px black;
+}
+.paralax img#gil{
+    top: -1%;
+    left: 0;
+    z-index: -1;
+
+}
+.paralax img#boy1{
+    top: 0;
+    left: -5%;
+
+}
+.paralax img#girl1{
+    top: -20%;
+    left: 25%;
+}
+#text3{
+    position: absolute;
+    font-size: 3em;
+    color: white;
+    padding: 10px 50px;
+    transform: translateY(90px);
+    left: 28%;
+    top: 50%;
+    text-shadow: 3px 3px 10px black;
+}
+.description img{
+    width: 600px;
+    height: auto;
+}
+@media (max-width: 342px){
+  .paralax{
+    width: 250%;
+  }
+  .description{
+    width: 250%;
+  }
+  .description2{
+    width: 250%;
+  }
+  .paralax img#boy1{
+    width: 150%;
+    left: -8%;
+  }
+  .paralax img#gil{
+    width: 150%;
+    left: -28%;
+  }
+  .paralax img#bush{
+    width: 150%;
+    left: -40%;
+  }
+
+  #text3{
+     transform: translateY(1px);
+     font-size: 2.3em;
+     left: 35%;
+     transform: translateX(35px);
+  }
+  #text2{
+    font-size: 2em;
+    left: -5%;
+    transform: translateY(136px);
+  }
+}
+@media (min-width: 343px){
+    .paralax{
+      width: 250%;
+    }
+    .description{
+      width: 250%;
+    }
+    .description2{
+      width: 250%;
+    }
+    .paralax img#boy1{
+      width: 120%;
+      left: -8%;
+    }
+    .paralax img#gil{
+      width: 120%;
+      left: -10%;
+    }
+    .paralax img#bush{
+      width: 150%;
+      left: -35%;
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 2.3em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 2em;
+      left: -3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (min-width: 429px){
+    .paralax{
+      width: 250%;
+    }
+    .description{
+      width: 250%;
+    }
+    .description2{
+      width: 250%;
+    }
+    .paralax img#boy1{
+      width: 110%;
+      left: -5%;
+    }
+    .paralax img#gil{
+      width: 100%;
+      left: 0;
+    }
+    .paralax img#bush{
+      width: 130%;
+      left: 5%;
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 2.3em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 2em;
+      left: 3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (min-width: 515px){
+    .paralax{
+      width: 250%;
+    }
+    .description{
+      width: 250%;
+    }
+    .description2{
+      width: 250%;
+    }
+    .paralax img#boy1{
+      width: 100%;
+      left: -3%;
+    }
+    .paralax img#gil{
+      width: 85%;
+      left: 15%;
+    }
+    .paralax img#bush{
+      width: 110%;
+      left: 5%;
+      top: 10%;
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 2.3em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 2em;
+      left: 3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (min-width: 604px){
+    .paralax{
+      width: 250%;
+    }
+    .description{
+      width: 250%;
+    }
+    .description2{
+      width: 250%;
+    }
+    .paralax img#boy1{
+      width: 90%;
+      left: -3%;
+    }
+    .paralax img#gil{
+      width: 85%;
+      left: 20%;
+      top: 0;
+    }
+    .paralax img#bush{
+      width: 110%;
+      left: 5%;
+      top: 10%;
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 2.8em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 2.5em;
+      left: 3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (min-width: 619px){
+    .paralax{
+      width: 250%;
+    }
+    .description{
+      width: 250%;
+    }
+    .description2{
+      width: 250%;
+    }
+    .paralax img#boy1{
+      width: 75%;
+      left: -3%;
+    }
+    .paralax img#gil{
+      width: 70%;
+      left: 30%;
+      top: 0;
+    }
+    .paralax img#bush{
+      width: 90%;
+      left: 15%;
+      top: 10%;
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 2.8em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 2.5em;
+      left: 3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (min-width: 732px){
+    .paralax{
+      width: 250%;
+    }
+    .description{
+      width: 250%;
+    }
+    .description2{
+      width: 250%;
+    }
+    .paralax img#boy1{
+      width: 65%;
+      left: -3%;
+    }
+    .paralax img#gil{
+      width: 60%;
+      left: 40%;
+      top: 0;
+    }
+    .paralax img#bush{
+      width: 80%;
+      left: 25%;
+      top: 10%;
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 3.1em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 3.5em;
+      left: 3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (min-width: 857px){
+    .paralax{
+      width: 100%;
+    }
+    .description{
+      width: 100%;
+    }
+    .description2{
+      width: 100%;
+    }
+    .paralax img#boy1{
+      width: 120%;
+      left: 2%;
+    }
+    .paralax img#gil{
+      width: 120%;
+      left: -10%;
+      top: 0;
+    }
+    .paralax img#bush{
+      width: 120%;
+      left: -20%;
+      top: 10%;
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 2em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 2em;
+      left: 3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (min-width: 1024px){
+    .paralax{
+      width: 100%;
+    }
+    .description{
+      width: 100%;
+    }
+    .description2{
+      width: 100%;
+    }
+    .paralax img#boy1{
+      width: 100%;
+      left: 5%;
+    }
+    .paralax img#gil{
+      width: 100%;
+      left: -10%;
+      top: 0;
+    }
+    .paralax img#bush{
+      width: 100%;
+      left: -13%;
+      
+    }
+  
+    #text3{
+       transform: translateY(1px);
+       font-size: 2em;
+       left: 35%;
+       transform: translateX(35px);
+    }
+    #text2{
+      font-size: 2em;
+      left: 3%;
+      transform: translateY(136px);
+    }
+  }
+  @media (max-width: 320px){
+    .paralax img#boy1{
+      width: 150%;
+    }
+  }
+  
+
+
+
+
