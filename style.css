@@ -127,7 +127,7 @@ body{
     /* sun */
     @media (max-width: 320px){
         .paralax img#sun{
-            width: 205%;
+            width: 220%;
         }
     }
     /* sun 2 */
